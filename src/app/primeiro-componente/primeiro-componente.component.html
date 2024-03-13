@@ -1,0 +1,15 @@
+<input
+  type="text"
+  [(ngModel)]="valorDigitado"
+  placeholder="Digite um texto aqui"
+  id="valor"
+>
+<br>
+<p *ngIf="mostrarValor">{{valorDigitado}}</p>
+<button
+  (click)="atualizarParagrafo()"
+  id="primeiroBtn"
+  [ngClass]="{vermelho: btnIsVermelho}">
+  Mostrar texto!
+</button>
+<button (click)="mudarCorBtn()">Mudar cor</button>
